@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #afbab1;
+}
+
+main {
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 12px;
+  background: #fff;
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: rgb(5, 117, 14);
+}
+
+button {
+  background: rgb(5, 117, 14);
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  margin: 15px 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 12px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+}
+
+form > input {
+  width: 90%;
+  padding: 6px;
+  margin: 6px 0;
+  background: #afbab1;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+}
+
+form > button {
+  width: 40%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 12px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
