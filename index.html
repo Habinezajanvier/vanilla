@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7cfdc49cdd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
@@ -13,7 +17,7 @@
         <h1>Momo app</h1>
       </header>
       <button id="myBtn">Add transaction</button>
-      <!-- The Modal -->
+      <!-- The Create Modal -->
       <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
@@ -36,9 +40,37 @@
           </form>
         </div>
       </div>
+      <!-- End of Create modal -->
+
+      <!-- The update modal -->
+
+      <div id="myUpdateModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2 id="updateHeading"></h2>
+          </div>
+          <form id="update-form">
+            <input type="date" id="update-date" placeholder="Date" />
+            <input type="text" list="types" id="update-type" />
+            <datalist id="types">
+              <option value="incominng"></option>
+              <option value="outcoming"></option>
+            </datalist>
+
+            <input type="number" id="update-amount" placeholder="Amount" />
+            <input type="text" id="update-sender" placeholder="Sender" />
+            <input type="text" id="update-receiver" placeholder="Receiver" />
+            <button type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- End of the update modal -->
+
       <table></table>
     </main>
     <script src="./script.js"></script>
-    <script src="./storage.js"></script>
   </body>
 </html>

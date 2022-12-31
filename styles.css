@@ -104,3 +104,7 @@ th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+.fa-trash {
+  color: rgb(117, 5, 5);
+}
